@@ -62,14 +62,15 @@ body {
 }
 
 .resume__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adapta-se automaticamente */
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); /* Adapta-se automaticamente */
   gap: var(--gap);
   justify-items: center;
 }
 
 .resume__group {
-  width: 100%;
+  width: 90%;
   padding: var(--padding);
   background-color: var(--container-color);
   border-radius: 15px;
@@ -116,7 +117,7 @@ body {
   height: 3rem;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex;
   justify-content: center;
   color: var(--text-color);
   cursor: pointer;
@@ -161,7 +162,7 @@ body {
 .resume__description {
   font-size: 1rem;
   color: #ddd;
-  line-height: 1.8;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 

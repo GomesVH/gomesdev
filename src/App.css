@@ -9,7 +9,7 @@
  /* ================================================= */
  :root {
      /* ================== Cores ================== */
-     --primary-color: hsl(165, 60%, 40%);
+     --primary-color: hsl(165, 29%, 58%);
      --secondary-color: hsl(213, 10%, 55%);
      --bg-color: hsl(216, 18%, 16%);
      --bg-color-alt: hsl(213, 10%, 21%);
@@ -112,7 +112,7 @@
  }
 
  .grid {
-     display: grid;
+     display: flex;
      gap: 1.5rem;
  }
 

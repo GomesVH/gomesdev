@@ -1,0 +1,193 @@
+/* Estilo Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Cor de fundo mais clara e moderna */
+    color: #333;
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header:hover {
+    background-color: #22313f; /* Suave efeito ao passar o mouse */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.nav__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    width: 120px; /* Ajuste no tamanho padrão */
+    height: auto;
+}
+
+/* Menu de Navegação */
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75%; /* Ocupa 75% da largura da tela */
+    background-color: #34495e;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 200;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.show-menu {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    color: #ecf0f1;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    background-color: #22313f;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Redes Sociais */
+.header__socials {
+    margin-top: 2rem;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.header__social-link {
+    color: #ecf0f1;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.header__social-link:hover {
+    color: #bdc3c7;
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Botões */
+.nav__toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 300;
+    color: #ecf0f1;
+    transition: transform 0.3s ease;
+}
+
+.nav__toggle:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+.nav__close {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+    color: #ecf0f1;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav__close:hover {
+    color: #bdc3c7;
+    transform: rotate(90deg); /* Efeito de rotação ao passar o mouse */
+}
+
+/* Media Queries (Para dispositivos maiores) */
+@media (min-width: 769px) {
+    .nav__menu {
+        position: static;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        flex-direction: row;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .nav__link {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        text-align: left;
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none; /* Esconde os botões no desktop */
+    }
+
+    .header__socials {
+        display: flex; /* Exibe as redes sociais no desktop */
+        gap: 1.5rem;
+    }
+}

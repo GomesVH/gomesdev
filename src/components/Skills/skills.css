@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #4CA1AF;
+    --background-color: #F5F5F5;
+    --text-color: #FFF;
+    --accent-color: #00A8E8;
+    --container-color: #333;
+    --font-family: 'Roboto', sans-serif;
+    --tiny-font-size: 0.875rem;
+    --h4-font-size: 1.5rem;
+    --hover-bg-color: #3b3f52; /* Cor de fundo mais clara para o hover */
+  }
+  
+  .skills {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+  }
+  
+  .section__title {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .section__subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .skills__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .skills__item {
+    background-color: var(--container-color);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 250px; 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skills__item:hover {
+    transform: translateY(-15px) scale(1.1); /* Pulo com efeito maior */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    background-color: var(--hover-bg-color); /* Cor de fundo ao passar o mouse */
+  }
+  
+  .skills__image {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.4s ease; /* Suaviza a animação da imagem */
+  }
+  
+  .skills__item:hover .skills__image {
+    transform: translateY(-5px) rotate(-5deg); /* Leve rotação e pulo do ícone */
+  }
+  
+  .skills__name {
+    font-size: 1.4rem;
+    color: #ddd;
+    transition: color 0.4s ease; /* Anima a cor do texto */
+  }
+  
+  .skills__item:hover .skills__name {
+    color: var(--accent-color); /* Muda a cor do nome ao passar o mouse */
+  }
+  
+  @media (max-width: 768px) {
+    .section__title {
+        font-size: 2.2rem;
+    }
+  
+    .section__subtitle {
+        font-size: 1.1rem;
+    }
+  
+    .skills__image {
+        font-size: 3rem;
+    }
+  
+    .skills__name {
+        font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills__item {
+        padding: 30px;
+    }
+  
+    .skills__image {
+        font-size: 3rem;
+    }
+  
+    .skills__name {
+        font-size: 1.1rem;
+    }
+  }
+  
+  /* Cores dos ícones */
+  #html {
+    color: #E34F26; /* Cor para HTML */
+  }
+  
+  #css {
+    color: #1572B6; /* Cor para CSS */
+  }
+  
+  #js {
+    color: #F7DF1E; /* Cor para JavaScript */
+  }
+  
+  #ts {
+    color: #3178C6; /* Cor para TypeScript */
+  }
+  
+  #react {
+    color: #61DAFB; /* Cor para React */
+  }
+  
+  #bootstrap {
+    color: #7952B3; /* Cor para Bootstrap */
+  }
+  
+  #python {
+    color: #3776AB; /* Cor para Python */
+  }
+  
+  #django {
+    color: #092E20; /* Cor para Django */
+  }
+  
+  #postgresql {
+    color: #336791; /* Cor para PostgreSQL */
+  }
+  
+  #git {
+    color: #F05032; /* Cor para Git */
+  }
+  
+  #sql {
+    color: #00758F;
+  }
+  
+  #csharp {
+    color: #FF9900;
+  }
+
+  #asp.net {
+    color: #3572A5;
+  }
+  
+  #mongodb {
+    color: #47A248;
+  }
+  
+  #java {
+    color: #007396;
+  }
+  
+  #springboot {
+    color: #6DB33F;
+  }

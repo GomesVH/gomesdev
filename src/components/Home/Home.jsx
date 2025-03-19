@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import profile from '../../assets/profile-img.png';
+import profile from '../../assets/images.png';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import CV from '../../assets/Victor.pdf'; // Link para o PDF do CV
 
@@ -24,7 +24,7 @@ const Home = () => {
             <h1 className="home__title">Victor Gomes</h1>
             <p className="home__job">Desenvolvedor Full Stack</p>
             <p className="home__description">
-              Sou um desenvolvedor Full Stack, especializado em criar soluções eficientes e inovadoras que otimizam a performance e a usabilidade de sistemas. Tenho experiência sólida em Python com Django, Java com Spring Boot e ReactJS, além de trabalhar com bancos de dados como MySQL, SQL e PostgreSQL. Com noções de AWS, sou capaz de desenvolver soluções escaláveis e robustas, contribuindo para projetos que impactam positivamente a experiência do usuário. Estou sempre em busca de novos desafios para expandir minhas habilidades e entregar resultados excepcionais.
+              Sou um desenvolvedor Full Stack, especializado em criar soluções eficientes e inovadoras que otimizam a performance e a usabilidade de sistemas. Tenho experiência sólida em JavaScript com Angular,C# com ASP.Net e Java com Spring Boot, além de trabalhar com bancos de dados como MySQL, SQL e PostgreSQL. Sou capaz de desenvolver soluções escaláveis e robustas, contribuindo para projetos que impactam positivamente a experiência do usuário. Estou sempre em busca de novos desafios para expandir minhas habilidades e entregar soluções.
             </p>
 
             {/* Links para Redes Sociais */}
